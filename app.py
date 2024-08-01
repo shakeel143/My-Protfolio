@@ -38,7 +38,7 @@ class Contact(db.Model):
 
 
 def get_projects():
-    api_url = f'https://api.github.com/users/dmdhrumilmistry/repos'
+    api_url = f'https://api.github.com/users/shakeel143/repos'
     cards_list = requests.get(api_url).json()
     return cards_list
 
@@ -55,7 +55,7 @@ def err_404(message):
 
 @app.route('/')
 def main_page():
-    return render_template('index.html', title='Dhrumil Mistry - Homepage')
+    return render_template('index.html', title='Shakeel Ahmed - Homepage')
 
 
 @app.route('/home')
